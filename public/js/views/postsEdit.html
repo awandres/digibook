@@ -1,0 +1,15 @@
+<h1>Edit Post</h1>
+<form>
+  <div class="form-row">
+    <label for="post-date">Name</label>
+    <input type="text" id="post-date" ng-model="vm.post.date" spellcheck="false">
+  </div>
+  <div class="form-row">
+    <label for="post-content">Photo URL</label>
+    <input type="text" id="post-content" ng-model="vm.post.content" spellcheck="false">
+  </div>
+  <div class="form-row">
+    <button type="submit" ng-click="vm.updateHero()">Save Changes</button>
+    <button type="submit" ng-click="vm.destroyHero()">Delete</button>
+  </div>
+</form>

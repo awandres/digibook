@@ -1,5 +1,4 @@
-angular
-.module('digibook')
+angular.module('digibook')
 .factory('PostFactory', [
   '$resource',
   PostFactory
