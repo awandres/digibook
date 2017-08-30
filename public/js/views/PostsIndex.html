@@ -1,0 +1,7 @@
+<h1>Digibook Posts</h1>
+
+<div class="posts-gallery">
+    <div ng-repeat="post in vm.posts">
+      <a ui-sref="postsShow({id: post.id})">{{post.date}}</a>
+    </div>
+</div>
