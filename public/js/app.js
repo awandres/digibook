@@ -24,6 +24,18 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider) {
       controllerAs: 'vm',
       templateUrl: 'assets/js/views/postsShow.html'
     })
+    .state('postsNew', {
+      url: '/posts/new',
+      controller: 'PostsNew',
+      controllerAs: 'vm',
+      templateUrl: 'assets/js/views/postsNew.html'
+    })
+    .state('postsEdit', {
+      url: '/edit',
+      controller: 'PostsEdit',
+      controllerAs: 'vm',
+      templateUrl: 'assets/js/views/postsEdit.html'
+    })
   $urlRouterProvider.otherwise('/posts')
   $locationProvider.html5mode(true)
 }
