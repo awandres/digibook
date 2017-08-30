@@ -1,0 +1,20 @@
+
+
+<div class="post-detail">
+  <div class="post-info">
+    <h1>Create Post</h1>
+    <form>
+      <div class="form-row">
+        <label for="post-date">Date</label>
+        <input type="text" id="post-date" ng-model="vm.post.date" spellcheck="false">
+      </div>
+      <div class="form-row">
+        <label for="post-content">Content</label>
+        <input type="text" id="post-content" ng-model="vm.post.content" spellcheck="false">
+      </div>
+      <div class="form-row">
+        <button type="submit" ng-click="vm.createPost()">Create</button>
+      </div>
+    </form>
+  </div>
+</div>
