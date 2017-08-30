@@ -14,4 +14,7 @@ Post.remove({}).then(function(){
         console.log(err)
       })
   })
+  .then(() => {
+    process.exit()
+  })
 })

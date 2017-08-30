@@ -1,3 +1,4 @@
+angular
 .module('digibook')
 .factory('PostFactory', [
   '$resource',
@@ -5,7 +6,7 @@
 ])
 
 function PostFactory($resource) {
-  return $resource('/posts/:id', null, {
+  return $resource('/api/posts/:id', null, {
     update: {method: 'PUT'}
   })
 }

@@ -1,7 +1,8 @@
-angular
-.module('digibook', [
-  'uiRouter',
-  'ngResources'
+console.log('linked')
+
+angular.module('digibook', [
+  'ui.router',
+  'ngResource'
 ])
 .config([
   '$stateProvider',
@@ -16,13 +17,13 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider) {
       url: '/posts',
       controller: 'PostsIndex',
       controllerAs: 'vm',
-      templateUrl: 'assets/js/views/postsIndex.html'
+      templateUrl: 'public/js/views/PostsIndex.html'
     })
     .state('postsShow', {
       url: '/posts/:id',
       controller: 'PostsShow',
       controllerAs: 'vm',
-      templateUrl: 'assets/js/views/postsShow.html'
+      templateUrl: 'public/js/views/PostsShow.html'
     })
   $urlRouterProvider.otherwise('/posts')
   $locationProvider.html5mode(true)

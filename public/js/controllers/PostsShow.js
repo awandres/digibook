@@ -1,4 +1,5 @@
-module('digibook')
+angular
+.module('digibook')
 .controller('PostsShow', [
   '$stateParams',
   'PostFactory',
