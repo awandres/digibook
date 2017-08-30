@@ -7,7 +7,7 @@ angular
     PostEditFn
   ])
 
-  function PostEditFn ($state, $stateParams, SuperheroFactory) {
+  function PostEditFn ($state, $stateParams, PostFactory) {
     this.post = PostFactory.get({ id: $stateParams.id })
     this.updatePost = function () {
       this.post.$update({ id: $stateParams.id })

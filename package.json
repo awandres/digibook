@@ -11,13 +11,15 @@
     "express": "^4.15.4",
     "mongodb": "^2.2.31",
     "mongoose": "^4.11.9",
-    "nodejs": "^0.0.0",
+    "node": "^8.3.0",
+    "nodejs": "0.0.0",
     "nodemon": "^1.11.0",
     "ui-router": "^1.0.0-alpha.3"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
